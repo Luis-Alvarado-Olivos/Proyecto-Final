@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3DB2A7"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="742dp">
+
+        <FrameLayout
+            android:layout_width="213dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="260dp"
+            android:background="#F2EEEE"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Button
+                android:id="@+id/buttonUpperBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/cuarto"
+                android:text="cuarto" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="213dp"
+            android:layout_height="86dp"
+            android:layout_marginTop="362dp"
+            android:background="#F6F3F3"
+            app:layout_constraintHorizontal_bias="0.457"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/sala"
+                android:text="sala" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="216dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="466dp"
+            android:background="#F6F0F0"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/bano1"
+                android:text="baño" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="219dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="564dp"
+            android:background="#EDE6E6"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/cocina"
+                android:text="cocina" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="413dp"
+            android:layout_height="255dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/casa1" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="214dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="654dp"
+            android:background="#F2EAEA"
+            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/buttonAddRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FF9800"
+                android:drawableLeft="@android:drawable/ic_input_add"
+                android:text="Agregar Habitacion"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="185dp"
+            android:layout_height="359dp"
+            android:layout_marginTop="263dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewRooms"
+                android:layout_width="178dp"
+                android:layout_height="345dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="16dp" />
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <Button
+        android:id="@+id/buttonRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habitación"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/buttonDeleteRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/purple_500"/>
+
+    <TextView
+        android:id="@+id/textRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Habitaciones"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>
